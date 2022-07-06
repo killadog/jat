@@ -1,0 +1,137 @@
+{
+    "control":[
+		{ "VTOY_DEFAULT_SEARCH_ROOT": "/" },
+        { "VTOY_DEFAULT_MENU_MODE": "1" }
+    ],
+    "theme_legacy":{
+        "file": "/ventoy/themes/jat/jat_bios.txt",
+		"gfxmode": "1024x768",
+        "ventoy_left": "75%",
+        "ventoy_top": "2%",
+        "ventoy_color": "#000000",
+		"fonts": [
+            "/ventoy/themes/jat/terminus-14.pf2",
+			"/ventoy/themes/jat/terminus-32.pf2"
+        ]
+    },
+    "theme_uefi":{
+        "file": "/ventoy/themes/jat/jat_uefi.txt",
+		"gfxmode": "1024x768",
+        "ventoy_left": "75%",
+        "ventoy_top": "2%",
+        "ventoy_color": "#c0c000",
+		"fonts": [
+            "/ventoy/themes/jat/terminus-14.pf2",
+			"/ventoy/themes/jat/terminus-32.pf2"
+        ]
+    },
+	"menu_alias":[
+        {
+            "image": "/ISO/clonezilla-live-3.0.1-8-amd64.iso",
+            "alias": "Clonezilla"
+        },
+	    {
+            "image": "/ISO/HBCD_PE_x64.iso",
+            "alias": "Hiren's BootCD PE (UEFI)"
+        },
+        {
+            "image": "/ventoy/grubfm_multiarch.iso",
+            "alias": "Grub2 File Manager"
+        },
+        {
+            "image": "/ventoy/memtest86.iso",
+            "alias": "MemTest86"
+        },
+        {
+            "image": "/ISO/HBCD15.1_Russian_by_lexapass.iso",
+            "alias": "Hiren's BootCD 15.1 RUS (Legacy)"
+        },
+		{
+            "image": "/ISO/hbcd-15.2-Restored-V1.1-dvd-proteus.iso",
+            "alias": "Hiren's BootCD 15.2 Restored v1.1 (Legacy)"
+        },
+		{
+            "image": "/ISO/ubcd539.iso",
+            "alias": "Ultimate Boot CD v5.3.9"
+        },
+		{
+            "image": "/ventoy/refind-cd-0.12.0.iso",
+            "alias": "*** not active"
+        },
+        {
+            "image": "/ventoy/grubfm_multiarch.iso",
+            "alias": "Grub2 File Manager"
+        }
+    ],
+
+     "menu_class":[
+        {
+            "key": "mint",
+            "class": "os_linuxmint"
+        },
+        {
+            "key": "ubuntu",
+            "class": "os_ubuntu"
+        },
+        {
+            "key": "win",
+            "class": "os_windows"
+        },
+        {
+            "key": "refind",
+            "class": "os_refind"
+        },
+        {
+            "key": "grubfm",
+            "class": "grubfm"
+        },
+        {
+            "key": "linux",
+            "class": "os_linux"
+        },
+        {
+            "key": "memtest",
+            "class": "memtest"
+        },
+        {
+            "dir": "/ventoy/ISO_IMAGES",
+            "class": "isodir"
+        },
+        {
+            "dir": "/ventoy/VHD_IMAGES",
+            "class": "vhddir"
+        },
+        {
+            "dir": "/ventoy/efitools",
+            "class": "efidir"
+        },
+        {
+            "key": ".vhd",
+            "class": "vtoyvhd"
+        },
+        {
+            "key": ".wim",
+            "class": "vtoywim"
+        },
+		{
+            "key": "hbcd",
+            "class": "hirens"
+        },
+		{
+            "key": "HBCD",
+            "class": "hirens"
+        },
+        {
+            "key": ".img",
+            "class": "cd"
+        },
+        {
+            "key": ".efi",
+            "class": "vtoyefi"
+        },
+        {
+            "key": ".iso",
+            "class": "vtoyiso"
+        }
+    ]
+}

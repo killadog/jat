@@ -1,0 +1,85 @@
+
+title-text: "BIOS mode"
+desktop-color: "#2871cc"
+title-color: "#ffffff"
+title-font: "Terminus Regular 32"
+message-color: "#f2f2f2"
+
+terminal-box: "terminal_box_*.png"
+terminal-font: "Terminus Regular 14"
+
++ boot_menu {
+	left = 10%
+	width = 80%
+	top = 10%
+	height = 70%
+
+	menu_pixmap_style = "menu_*.png"
+
+	item_font = "Terminus Regular 14"
+	item_color = "#ffffff"  
+	item_height = 30
+	item_spacing = 0
+	#item_padding = 20
+	item_icon_space = 10
+	item_icon_padding = 10
+
+
+	icon_width = 24
+	icon_height = 24
+
+
+	selected_item_color= "#000000"
+	selected_item_pixmap_style = "select_*.png"
+
+	scrollbar = true
+	scrollbar_width = 10
+	scrollbar_thumb = "slider_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  text = "@TIMEOUT_NOTIFICATION_SHORT@"
+
+  left = 20%
+  width = 60%
+  top = 85%
+
+  text_color = "yellow"
+  bar_style = "*"
+  highlight_style = "*"
+}
+
++ hbox{ 
+    left = 20%
+    top = 95%
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_HOTKEY_TIP@" color = "yellow" align = "left" font="Terminus Regular 14"} 
+}
+
++ hbox{ 
+    left = 42%
+    top = 93%-32
+    width = 10%
+    height = 32
+    + label {text = "@VTOY_MEM_DISK@" color = "red" align = "left" font="Terminus Regular 32"} 
+}
+
++ hbox{ 
+    left = 45%
+    top = 95%-50
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_ISO_RAW@" color = "red" align = "left" font="Terminus Regular 14"} 
+}
+
++ hbox{ 
+    left = 90%
+    top = 55 
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_ISO_UEFI_DRV@" color = "red" align = "left" font="Terminus Regular 14"} 
+}
+
+
